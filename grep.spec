@@ -1,12 +1,12 @@
 Summary:	GNU grep Utilities
 Name:		grep
-Version:	2.13
-Release:	2
+Version:	2.14
+Release:	1
 Epoch:		2
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.gnu.org/gnu/grep/%{name}-%{version}.tar.xz
-# Source0-md5:	5894d484e6c02249f9702d0d8a472115
+# Source0-md5:	d4a3f03849d1e17ce56ab76aa5a24cab
 URL:		http://www.gnu.org/software/grep/grep.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -50,16 +50,15 @@ echo .so grep.1 > $RPM_BUILD_ROOT%{_mandir}/man1/fgrep.1
 %find_lang %{name}
 
 rm -f $RPM_BUILD_ROOT%{_infodir}/dir
-rm -f $RPM_BUILD_ROOT%{_mandir}/README.grep-non-english-man-pages
 rm -f $RPM_BUILD_ROOT%{_mandir}/ja-grep-nozgrep.diff
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /sbin/postshell
+%post -p /usr/sbin/postshell
 -/usr/sbin/fix-info-dir -c %{_infodir}
 
-%postun -p /sbin/postshell
+%postun -p /usr/sbin/postshell
 -/usr/sbin/fix-info-dir -c %{_infodir}
 
 %files -f %{name}.lang
