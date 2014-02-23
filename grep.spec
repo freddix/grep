@@ -1,12 +1,12 @@
 Summary:	GNU grep Utilities
 Name:		grep
-Version:	2.17
+Version:	2.18
 Release:	1
 Epoch:		2
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.gnu.org/gnu/grep/%{name}-%{version}.tar.xz
-# Source0-md5:	3b1f0cbf1139e76171f790665b1b41cf
+# Source0-md5:	7439f8266f50844b56cc3e2721606541
 URL:		http://www.gnu.org/software/grep/grep.html
 BuildRequires:	autoconf
 BuildRequires:	automake
