@@ -1,7 +1,7 @@
 Summary:	GNU grep Utilities
 Name:		grep
 Version:	2.18
-Release:	1
+Release:	2
 Epoch:		2
 License:	GPL
 Group:		Applications/Text
