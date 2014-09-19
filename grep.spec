@@ -1,7 +1,8 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/grep.git
 Summary:	GNU grep Utilities
 Name:		grep
 Version:	2.20
-Release:	1
+Release:	2
 Epoch:		2
 License:	GPL
 Group:		Applications/Text
